@@ -65,6 +65,11 @@
             align-items: center;
             gap: 18px;
         }
+        .navbar-actions {
+            display: flex;
+            align-items: center;
+            gap: 0;
+        }
         .navbar-logo-img {
             width: 76px;
             height: 76px;
@@ -104,13 +109,27 @@
         }
         .navbar-links li a {
             color: #0d47a1;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 17px;
-            transition: color 0.2s;
-            padding: 8px 0;
+            padding: 10px 18px;
+            border-radius: 24px;
+            transition: 
+                color 0.18s cubic-bezier(.4,0,.2,1),
+                background 0.18s cubic-bezier(.4,0,.2,1),
+                box-shadow 0.18s cubic-bezier(.4,0,.2,1),
+                transform 0.18s cubic-bezier(.4,0,.2,1);
+            position: relative;
+            z-index: 1;
+            display: inline-block;
         }
-        .navbar-links li a:hover {
-            color: #1565c0;
+        .navbar-links li a:hover,
+        .navbar-links li a:focus {
+            color: #fff;
+            background: linear-gradient(90deg, #1e88e5 0%, #0d47a1 100%);
+            box-shadow: 0 2px 12px rgba(30,136,229,0.10);
+            transform: translateY(-2px) scale(1.04);
+            text-decoration: none;
+            outline: none;
         }
         .navbar-toggle {
             display: none;
@@ -153,6 +172,46 @@
             font-style: italic;
             margin-top: 30px;
             font-size: 15px;
+        }
+        /* Story section image placeholder (horizontal screens only) */
+        .story-flex {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 48px;
+        }
+        .story-image-placeholder {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 180px;
+            max-width: 260px;
+            width: 32vw;
+        }
+        .story-image-placeholder img {
+            width: 100%;
+            max-width: 220px;
+            min-width: 140px;
+            height: auto;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(13,71,161,0.10);
+            background: #e3eafc;
+            object-fit: contain;
+            transition: transform 0.25s cubic-bezier(.4,0,.2,1), box-shadow 0.25s;
+        }
+        .story-image-placeholder img:hover {
+            transform: scale(1.04) rotate(-2deg);
+            box-shadow: 0 8px 32px rgba(13,71,161,0.16);
+        }
+        @media (max-width: 900px) {
+            .story-flex {
+                flex-direction: column;
+                gap: 24px;
+            }
+            .story-image-placeholder {
+                display: none;
+            }
         }
 
         /* Services */
