@@ -12,31 +12,37 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="apple-touch-icon" sizes="180x180" href="/files/images/apple-touch-icon.jpg">
     <script defer src="/scripts/main.js"></script>
+    <script defer src="/scripts/translations.js"></script>
 </head>
 <body>
-
     <!-- Responsive Navbar -->
     <nav class="navbar">
         <div class="navbar-container">
             <div class="navbar-logo">
                 <img src="/files/images/icon.jpg" alt="Perius Technology Logo" class="navbar-logo-img">
                 <div class="navbar-logo-text">
-                    <span class="navbar-logo-main">PERIUS</span>
-                    <span class="navbar-logo-sub">TECHNOLOGY</span>
+                    <span class="navbar-logo-main" data-i18n="brand">PERIUS</span>
+                    <span class="navbar-logo-sub" data-i18n="brand_sub">TECHNOLOGY</span>
                 </div>
             </div>
             <div class="navbar-actions">
+                <button class="lang-toggle" id="lang-toggle" aria-label="Change language">
+                    EN
+                </button>
                 <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
                     <span class="navbar-toggle-bar"></span>
                     <span class="navbar-toggle-bar"></span>
                     <span class="navbar-toggle-bar"></span>
                 </button>
                 <ul class="navbar-links" id="navbar-links">
-                    <li><a href="#story-section">Our Story</a></li>
-                    <li><a href="#services-section">Services</a></li>
-                    <li><a href="#approach-section">Our Approach</a></li>
-                    <li><a href="#contact-section">Contact Us</a></li>
+                    <li><a href="#story-section" data-i18n="nav_story">Our Story</a></li>
+                    <li><a href="#services-section" data-i18n="nav_services">Services</a></li>
+                    <li><a href="#approach-section" data-i18n="nav_approach">Our Approach</a></li>
+                    <li><a href="#contact-section" data-i18n="nav_contact">Contact Us</a></li>
                 </ul>
+                <button class="lang-toggle desktop" id="lang-toggle-desktop" aria-label="Change language">
+                    EN
+                </button>
             </div>
         </div>
     </nav>
@@ -75,7 +81,8 @@
                     Founder, Perius Technology
                 </div>
             </div>
-            <div class="story-image-placeholder">
+            <div class="story-image">
+                <!-- cool HD self photo here -->
                 <img src="/files/images/icon.jpg" alt="Perius Technology" />
             </div>
         </div>
@@ -90,7 +97,9 @@
             <div class="services-grid">
                 <!-- Service 1 -->
                 <div class="service-item">
-                    <div class="service-image"></div>
+                    <div class="service-image">
+                        <img src="/files/images/icon.jpg" alt="Service 1 Representative Image" />
+                    </div>
                     <h3 class="service-title">CIO / CTO Advisory on IT Operating Models and Governance</h3>
                     <div class="service-desc">
                         <p>Executive-level advisory to shape operating models, governance, and decision rights that make IT measurable, controllable, and aligned with business outcomes.</p>
@@ -104,7 +113,9 @@
 
                 <!-- Service 2 -->
                 <div class="service-item">
-                    <div class="service-image"></div>
+                    <div class="service-image">
+                        <img src="/files/images/icon.jpg" alt="Service 2 Representative Image" />
+                    </div>
                     <h3 class="service-title">Design, Completion, and Maturation of IT Organizational Structures</h3>
                     <div class="service-desc">
                         <p>Design and mature IT organizations that are scalable, accountable, and execution-ready—beyond org charts and role definitions.</p>
@@ -118,7 +129,9 @@
 
                 <!-- Service 3 -->
                 <div class="service-item">
-                    <div class="service-image"></div>
+                    <div class="service-image">
+                        <img src="/files/images/icon.jpg" alt="Service 3 Representative Image" />
+                    </div>
                     <h3 class="service-title">Executive-Level Assessment of ITSM and SDLC Processes</h3>
                     <div class="service-desc">
                         <p>Executive assessment of ITSM and SDLC to identify gaps, reduce delivery friction, and establish standards that improve reliability and speed.</p>
@@ -132,7 +145,9 @@
 
                 <!-- Service 4 -->
                 <div class="service-item">
-                    <div class="service-image"></div>
+                    <div class="service-image">
+                        <img src="/files/images/icon.jpg" alt="Service 4 Representative Image" />
+                    </div>
                     <h3 class="service-title">Performance, KPI, and Decision-Making Frameworks</h3>
                     <div class="service-desc">
                         <p>Define performance and KPI architecture that improves transparency, accountability, and decision quality across IT and delivery.</p>
@@ -146,7 +161,9 @@
 
                 <!-- Service 5 -->
                 <div class="service-item">
-                    <div class="service-image"></div>
+                    <div class="service-image">
+                        <img src="/files/images/icon.jpg" alt="Service 5 Representative Image" />
+                    </div>
                     <h3 class="service-title">Continuous Improvement and Periodic IT Health Checks</h3>
                     <div class="service-desc">
                         <p>Ongoing IT health checks and continuous improvement governance to keep operations stable, measurable, and constantly improving.</p>
@@ -160,7 +177,9 @@
 
                 <!-- Service 6 -->
                 <div class="service-item">
-                    <div class="service-image"></div>
+                    <div class="service-image">
+                        <img src="/files/images/icon.jpg" alt="Service 6 Representative Image" />
+                    </div>
                     <h3 class="service-title">AI-Enabled Optimization and Automation Advisory</h3>
                     <div class="service-desc">
                         <p>Controlled adoption of automation and AI with governance and value tracking—focused on measurable outcomes, not experimentation without control.</p>
