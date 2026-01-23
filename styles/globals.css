@@ -329,15 +329,36 @@ header {
   justify-content: center;
   width: 100%;
   height: 180px;
-  /* background-color: #0d47a1; */
-  /* background-image: linear-gradient(135deg, #1e88e5, #1565c0); */
+  background-color: #0d47a1;
+  background-image: linear-gradient(135deg, #95cdff, #4379b729);
   border-radius: 8px;
+  position: relative; /* for pseudo-element stacking */
+  overflow: hidden;
+}
+.service-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(18px) brightness(1.08);
+  /* fallback color if image fails */
+  background-color: #e3eafc;
+  /* Use the same image as the img inside, override in HTML if needed */
+  background-image: inherit;
 }
 .service-image img {
+  position: relative;
+  z-index: 1;
   max-width: 100%;
   max-height: 100%;
   border-radius: 8px;
   object-fit: cover;
+  /* Remove background, shadow, etc. if present */
+  background: none;
+  box-shadow: none;
 }
 .service-title {
   font-size: 20px;
@@ -516,11 +537,24 @@ footer {
 .main-tagline-text h3 {
   font-size: 1.05rem;
   color: #1565c0;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 0;
   text-align: left;
-  letter-spacing: 0.5px;
+  letter-spacing: 1.2px;
+  line-height: 2;
 }
+
+.main-tagline-text div {
+  width: fit-content;
+  line-height: 1.2;
+}
+
+.main-tagline-text hr {
+  margin: 5px 0;
+  border: 0.1px solid  #0000002a;
+}
+
+
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

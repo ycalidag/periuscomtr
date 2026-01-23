@@ -1,248 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perius Technology | Technology Executive Advisory | Istanbul, Türkiye</title>
-    <meta name="description" content="Perius Technology: Technology executive partner for future-ready organizations. ​Helping leaders adopt technology and AI with clear decisions and measurable results.">
-    <meta name="keywords" content="technology, executive advisory, Istanbul, Turkey, tech leadership, digital transformation, artificial intelligence, innovation, business development, technology solutions, IT consulting,">
-    <link rel="stylesheet" href="styles/globals.css">
-    <link rel="icon" type="image/jpg" sizes="32x32" href="files/images/shortcut-icon.jpg">
-    <link rel="icon" type="image/jpg" sizes="16x16" href="files/images/icon.jpg">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon" sizes="180x180" href="files/images/apple-touch-icon.jpg">
-    <script defer src="scripts/main.js"></script>
-    <script defer src="scripts/translations.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>
+    Perius Technology | Technology Executive Advisory | Istanbul, Türkiye
+  </title>
+
+  <meta name="description"
+    content="Perius Technology: Trusted technology executive partner for CIOs and CTOs. Helping organizations adopt AI and digital transformation with governance, measurable results, and executive advisory. Founder: Yeşim Çalıdağ, Istanbul, Turkey." />
+
+  <meta name="keywords"
+    content="Perius Technology, Yeşim Çalıdağ, technology advisory, CIO advisory, CTO advisory, AI adoption, digital transformation, executive IT governance, Istanbul, Turkey, IT operations, KPIs, performance frameworks, IT organizational design, IT health checks" />
+
+  <!-- Open Graph for social sharing & AI context -->
+  <meta property="og:title" content="Perius Technology | Technology Executive Advisory | Istanbul, Türkiye" />
+  <meta property="og:description"
+    content="Executive advisory helping organizations adopt technology and AI with governance, measurable outcomes, and controlled adoption. Founder: Yeşim Çalıdağ" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://perius.com.tr" />
+  <meta property="og:image" content="https://perius.com.tr/files/images/logo.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Perius Technology | Technology Executive Advisory" />
+  <meta name="twitter:description"
+    content="Executive advisory for technology adoption, AI, and digital transformation. Founder: Yeşim Çalıdağ, Istanbul, Turkey." />
+  <meta name="twitter:image" content="https://perius.com.tr/files/images/logo.png" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://perius.com.tr" />
+
+  <!-- Styles & scripts -->
+  <link rel="stylesheet" href="styles/globals.css" />
+  <link rel="icon" type="image/jpg" sizes="32x32" href="files/images/shortcut-icon.jpg" />
+  <link rel="icon" type="image/jpg" sizes="16x16" href="files/images/icon.jpg" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="180x180" href="files/images/apple-touch-icon.jpg" />
+
+  <script defer src="scripts/main.js"></script>
+  <script defer src="scripts/translations.js"></script>
+
+  <!-- Structured Data for AI & Google -->
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Perius Technology",
+        "url": "https://perius.com.tr",
+        "logo": "https://perius.com.tr/files/images/logo.png",
+        "description": "Technology executive partner helping organizations adopt AI and digital transformation with governance, measurable outcomes, and controlled adoption.",
+        "founder": {
+          "@type": "Person",
+          "name": "Yeşim Çalıdağ"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Istanbul",
+          "addressCountry": "Turkey"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/yesimcalidag",
+          "https://twitter.com/yesimcalidag"
+        ]
+      }
+    </script>
 </head>
+
 <body>
-    <!-- Responsive Navbar -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <div class="navbar-logo">
-                <img src="files/images/icon.jpg" alt="Perius Technology Logo" class="navbar-logo-img">
-                <div class="navbar-logo-text">
-                    <span class="navbar-logo-main" >PERIUS</span>
-                    <span class="navbar-logo-sub" >TECHNOLOGY</span>
-                </div>
-            </div>
-            <div class="navbar-actions">
-                <button class="lang-toggle" id="lang-toggle" aria-label="Change language">
-                    <span class="lang-icon" aria-hidden="true">
-                        <!-- Globe SVG -->
-                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;margin-right:6px;" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="10" cy="10" r="9" stroke="#0d47a1" stroke-width="1.5" fill="none"/>
-                            <ellipse cx="10" cy="10" rx="5" ry="9" stroke="#0d47a1" stroke-width="1.5" fill="none"/>
-                            <line x1="1" y1="10" x2="19" y2="10" stroke="#0d47a1" stroke-width="1.2"/>
-                            <line x1="10" y1="1" x2="10" y2="19" stroke="#0d47a1" stroke-width="1.2"/>
-                        </svg>
-                    </span>
-                    <span class="lang-label">EN</span>
-                </button>
-                <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
-                    <span class="navbar-toggle-bar"></span>
-                    <span class="navbar-toggle-bar"></span>
-                    <span class="navbar-toggle-bar"></span>
-                </button>
-                <ul class="navbar-links" id="navbar-links">
-                    <li><a href="#story-section" data-i18n="nav_story">Our Story</a></li>
-                    <li><a href="#services-section" data-i18n="nav_services">Services</a></li>
-                    <li><a href="#approach-section" data-i18n="nav_approach">Our Approach</a></li>
-                    <li><a href="#contact-section" data-i18n="nav_contact">Contact Us</a></li>
-                </ul>
-                <button class="lang-toggle desktop" id="lang-toggle-desktop" aria-label="Change language">
-                    <span class="lang-icon" aria-hidden="true">
-                        <!-- Globe SVG -->
-                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" style="vertical-align:middle;margin-right:0px;" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="10" cy="10" r="9" stroke="#0d47a1" stroke-width="1.5" fill="none"/>
-                            <ellipse cx="10" cy="10" rx="5" ry="9" stroke="#0d47a1" stroke-width="1.5" fill="none"/>
-                            <line x1="1" y1="10" x2="19" y2="10" stroke="#0d47a1" stroke-width="1.2"/>
-                            <line x1="10" y1="1" x2="10" y2="19" stroke="#0d47a1" stroke-width="1.2"/>
-                        </svg>
-                    </span>
-                    <span class="lang-label">EN</span>
-                </button>
-            </div>
+  <!-- Responsive Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <img src="files/images/icon.jpg" alt="Perius Technology Logo" class="navbar-logo-img" />
+        <div class="navbar-logo-text">
+          <span class="navbar-logo-main">PERIUS</span>
+          <span class="navbar-logo-sub">TECHNOLOGY</span>
         </div>
-    </nav>
-    <!-- header with logo and text but no lets talk button -->
-    <header>
-        <!-- Tagline and Logo Section -->
-        <div class="main-tagline-container">
-            <div class="main-tagline-inner">
-                <img src="files/images/logo.png" alt="Perius Technology Logo" class="main-tagline-logo">
-                <div class="main-tagline-text">
-                    <h1>Technology executive partner for future-ready organizations.</h1>
-                    <h2>Helping leaders adopt technology and AI with clear decisions and measurable results.</h2>
-
-                        <h3>CIO / CTO Advisory</h3><hr>
-                        <h3>IT Operations & Delivery Excellence</h3><hr>
-                        <h3>Decision & Governance Frameworks</h3><hr>
-
-                </div>
-            </div>
+      </div>
+      <div class="navbar-actions">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Change language">
+          <span class="lang-icon" aria-hidden="true">
+            <!-- Globe SVG -->
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="none"
+              style="vertical-align: middle; margin-right: 6px" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="9" stroke="#0d47a1" stroke-width="1.5" fill="none" />
+              <ellipse cx="10" cy="10" rx="5" ry="9" stroke="#0d47a1" stroke-width="1.5" fill="none" />
+              <line x1="1" y1="10" x2="19" y2="10" stroke="#0d47a1" stroke-width="1.2" />
+              <line x1="10" y1="1" x2="10" y2="19" stroke="#0d47a1" stroke-width="1.2" />
+            </svg>
+          </span>
+          <span class="lang-label">EN</span>
+        </button>
+        <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation">
+          <span class="navbar-toggle-bar"></span>
+          <span class="navbar-toggle-bar"></span>
+          <span class="navbar-toggle-bar"></span>
+        </button>
+        <ul class="navbar-links" id="navbar-links">
+          <li>
+            <a href="#story-section" data-i18n="nav_story">Our Story</a>
+          </li>
+          <li>
+            <a href="#services-section" data-i18n="nav_services">Services</a>
+          </li>
+          <li>
+            <a href="#approach-section" data-i18n="nav_approach">Our Approach</a>
+          </li>
+          <li>
+            <a href="#contact-section" data-i18n="nav_contact">Contact Us</a>
+          </li>
+        </ul>
+        <button class="lang-toggle desktop" id="lang-toggle-desktop" aria-label="Change language">
+          <span class="lang-icon" aria-hidden="true">
+            <!-- Globe SVG -->
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="none"
+              style="vertical-align: middle; margin-right: 0px" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="9" stroke="#0d47a1" stroke-width="1.5" fill="none" />
+              <ellipse cx="10" cy="10" rx="5" ry="9" stroke="#0d47a1" stroke-width="1.5" fill="none" />
+              <line x1="1" y1="10" x2="19" y2="10" stroke="#0d47a1" stroke-width="1.2" />
+              <line x1="10" y1="1" x2="10" y2="19" stroke="#0d47a1" stroke-width="1.2" />
+            </svg>
+          </span>
+          <span class="lang-label">EN</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- header with logo and text but no lets talk button -->
+  <header>
+    <!-- Tagline and Logo Section -->
+    <div class="main-tagline-container">
+      <div class="main-tagline-inner">
+        <img src="files/images/logo.png" alt="Perius Technology Logo" class="main-tagline-logo" />
+        <div class="main-tagline-text">
+          <h1>
+            Technology executive partner for future-ready organizations.
+          </h1>
+          <h2>
+            Helping leaders adopt technology and AI with clear decisions and
+            measurable results.
+          </h2>
+          <div style="width: fit-content; height: fit-content;">
+            <h3>CIO / CTO Advisory</h3>
+            <hr style="width: 100%;">
+            <h3>IT Operations & Delivery Excellence</h3>
+            <hr style="width: 100%;">
+            <h3>Decision & Governance Frameworks</h3>
+          </div>
+          
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    
-
-    <!-- Our Story -->
-    <section class="story-section" id="story-section">
-        <div class="container story-inner story-flex">
-            <div class="story-text">
-                <h2>Our Story</h2>
-                <h3>Perius takes its name from the butterfly — a symbol of transformation and renewal.</h3> <br>
-                <p>With 25+ years of leadership in large, regulated financial institutions, I now partner with executives to deliver enterprise-scale technology and digital transformations end-to-end—from strategy and governance through execution to measurable business outcomes.</p>
-                <p>Through Perius, I serve as a trusted executive partner helping organizations adopt technology and AI with fit-for-purpose operating models, accountable decision-making, and performance frameworks—making progress measurable and sustainable.</p>
-                <div class="founder">
-                    Yeşim Çalıdağ<br>
-                    Founder, Perius Technology
-                </div>
-            </div>
-            <div class="story-image">
-                <!-- cool HD self photo here -->
-                <img src="files/images/portrait.png" alt="Founder Portrait" />
-            </div>
+  <!-- Our Story -->
+  <section class="story-section" id="story-section">
+    <div class="container story-inner story-flex">
+      <div class="story-text">
+        <h2>Our Story</h2>
+        <h3>
+          Perius takes its name from the butterfly — a symbol of
+          transformation and renewal.
+        </h3>
+        <br />
+        <p>
+          With 25+ years of leadership in large, regulated financial
+          institutions, I now partner with executives to deliver
+          enterprise-scale technology and digital transformations
+          end-to-end—from strategy and governance through execution to
+          measurable business outcomes.
+        </p>
+        <p>
+          Through Perius, I serve as a trusted executive partner helping
+          organizations adopt technology and AI with fit-for-purpose operating
+          models, accountable decision-making, and performance
+          frameworks—making progress measurable and sustainable.
+        </p>
+        <div class="founder">
+          Yeşim Çalıdağ<br />
+          Founder, Perius Technology
         </div>
-    </section>
+      </div>
+      <div class="story-image">
+        <!-- cool HD self photo here -->
+        <img src="files/images/portrait.png" alt="Founder Portrait" />
+      </div>
+    </div>
+  </section>
 
-    <!-- Services -->
-    <section class="services" id="services-section">
-        <div class="container">
-            <h2 class="section-title">Services</h2>
-            <p class="section-subtitle">Executive advisory that makes technology measurable and governable.</p>
+  <!-- Services -->
+  <section class="services" id="services-section">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+      <p class="section-subtitle">
+        Executive advisory that makes technology measurable and governable.
+      </p>
 
-            <div class="services-grid">
-                <!-- Service 1 -->
-                <div class="service-item">
-                    <div class="service-image">
-                        <img src="files/images/service1.jpg" alt="Service 1 Representative Image" />
-                    </div>
-                    <h3 class="service-title">CIO / CTO Advisory on IT Operating Models and Governance</h3>
-                    <div class="service-desc">
-                        <p>Executive-level advisory to shape operating models, governance, and decision rights that make IT measurable, controllable, and aligned with business outcomes.</p>
-                        <ul>
-                            <li>Operating model and governance design</li>
-                            <li>Ownership, decision rights, control mechanisms</li>
-                            <li>Executive stakeholder alignment and decision cadence</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="service-item">
-                    <div class="service-image">
-                        <img src="files/images/service2.jpg" alt="Service 2 Representative Image" />
-                    </div>
-                    <h3 class="service-title">Design, Completion, and Maturation of IT Organizational Structures</h3>
-                    <div class="service-desc">
-                        <p>Design and mature IT organizations that are scalable, accountable, and execution-ready—beyond org charts and role definitions.</p>
-                        <ul>
-                            <li>Org design and role clarity</li>
-                            <li>Structure completion and maturity roadmap</li>
-                            <li>Alignment between organization, processes, and delivery</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="service-item">
-                    <div class="service-image">
-                        <img src="files/images/service3.jpg" alt="Service 3 Representative Image" />
-                    </div>
-                    <h3 class="service-title">Executive-Level Assessment of ITSM and SDLC Processes</h3>
-                    <div class="service-desc">
-                        <p>Executive assessment of ITSM and SDLC to identify gaps, reduce delivery friction, and establish standards that improve reliability and speed.</p>
-                        <ul>
-                            <li>ITSM and SDLC maturity assessment</li>
-                            <li>Governance and compliance readiness</li>
-                            <li>Prioritized improvement roadmap</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Service 4 -->
-                <div class="service-item">
-                    <div class="service-image">
-                        <img src="files/images/service4.jpg" alt="Service 4 Representative Image" />
-                    </div>
-                    <h3 class="service-title">Performance, KPI, and Decision-Making Frameworks</h3>
-                    <div class="service-desc">
-                        <p>Define performance and KPI architecture that improves transparency, accountability, and decision quality across IT and delivery.</p>
-                        <ul>
-                            <li>KPI architecture and reporting</li>
-                            <li>Decision frameworks and governance routines</li>
-                            <li>Audit readiness and management visibility</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Service 5 -->
-                <div class="service-item">
-                    <div class="service-image">
-                        <img src="files/images/service5.jpg" alt="Service 5 Representative Image" />
-                    </div>
-                    <h3 class="service-title">Continuous Improvement and Periodic IT Health Checks</h3>
-                    <div class="service-desc">
-                        <p>Ongoing IT health checks and continuous improvement governance to keep operations stable, measurable, and constantly improving.</p>
-                        <ul>
-                            <li>Periodic health checks and gap closure</li>
-                            <li>Continuous improvement backlog and follow-up</li>
-                            <li>Governance cadence and tracking</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Service 6 -->
-                <div class="service-item">
-                    <div class="service-image">
-                        <img src="files/images/service6.jpg" alt="Service 6 Representative Image" />
-                    </div>
-                    <h3 class="service-title">AI-Enabled Optimization and Automation Advisory</h3>
-                    <div class="service-desc">
-                        <p>Controlled adoption of automation and AI with governance and value tracking—focused on measurable outcomes, not experimentation without control.</p>
-                        <ul>
-                            <li>AI-enabled optimization opportunities</li>
-                            <li>Automation advisory (controlled rollout)</li>
-                            <li>Value tracking and change enablement</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Our Approach -->
-    <section class="approach-section" id="approach-section">
-        <div class="container">
-            <h2 class="approach-title">Our Approach</h2>
-            <p class="approach-text">
-                We work as an executive partner to help organizations adopt technology and AI with governance, control, and measurable results. <br> <br>
-                We start by clarifying ownership, decision rights, and success metrics—then design an operating model and governance cadence that makes progress visible and manageable.​ We translate priorities into a practical roadmap and stay involved through execution: reviewing KPIs, closing gaps, building a continuous improvement backlog, and ensuring adoption is controlled—not ad-hoc. <br> <br>
-                The goal is always the same: sustainable outcomes, not presentations and slideware.
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-item">
+          <div class="service-image">
+            <img src="files/images/service1.jpg" alt="Service 1 Representative Image" />
+          </div>
+          <h3 class="service-title">
+            CIO / CTO Advisory on IT Operating Models and Governance
+          </h3>
+          <div class="service-desc">
+            <p>
+              Executive-level advisory to shape operating models, governance,
+              and decision rights that make IT measurable, controllable, and
+              aligned with business outcomes.
             </p>
-            <p class="approach-cta-text">
-                For executive conversations on technology strategy, governance, operating models, and AI adoption:
+            <ul>
+              <li>Operating model and governance design</li>
+              <li>Ownership, decision rights, control mechanisms</li>
+              <li>Executive stakeholder alignment and decision cadence</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-item">
+          <div class="service-image">
+            <img src="files/images/service2.jpg" alt="Service 2 Representative Image" />
+          </div>
+          <h3 class="service-title">
+            Design, Completion, and Maturation of IT Organizational Structures
+          </h3>
+          <div class="service-desc">
+            <p>
+              Design and mature IT organizations that are scalable,
+              accountable, and execution-ready—beyond org charts and role
+              definitions.
             </p>
-            <div class="approach-cta">
-                <a href="mailto:yesim.calidag@perius.com.tr" class="cta-button">Let's Talk</a>
-            </div>
+            <ul>
+              <li>Org design and role clarity</li>
+              <li>Structure completion and maturity roadmap</li>
+              <li>Alignment between organization, processes, and delivery</li>
+            </ul>
+          </div>
         </div>
-    </section>
 
-    <!-- Contact Us (footer anchor) -->
-    <section id="contact-section"></section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-text">&copy; Perius Technology. All rights reserved.</div>
-            <a href="https://www.linkedin.com/in/yesimcalidag" target="_blank" rel="noopener" class="footer-linkedin" aria-label="LinkedIn">
-                <span class="linkedin-icon" aria-hidden="true">
-                    <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="" srcset="">
-                </span>
-            </a>
+        <!-- Service 3 -->
+        <div class="service-item">
+          <div class="service-image">
+            <img src="files/images/service3.jpg" alt="Service 3 Representative Image" />
+          </div>
+          <h3 class="service-title">
+            Executive-Level Assessment of ITSM and SDLC Processes
+          </h3>
+          <div class="service-desc">
+            <p>
+              Executive assessment of ITSM and SDLC to identify gaps, reduce
+              delivery friction, and establish standards that improve
+              reliability and speed.
+            </p>
+            <ul>
+              <li>ITSM and SDLC maturity assessment</li>
+              <li>Governance and compliance readiness</li>
+              <li>Prioritized improvement roadmap</li>
+            </ul>
+          </div>
         </div>
-    </footer>
 
+        <!-- Service 4 -->
+        <div class="service-item">
+          <div class="service-image">
+            <img src="files/images/service4.jpg" alt="Service 4 Representative Image" />
+          </div>
+          <h3 class="service-title">
+            Performance, KPI, and Decision-Making Frameworks
+          </h3>
+          <div class="service-desc">
+            <p>
+              Define performance and KPI architecture that improves
+              transparency, accountability, and decision quality across IT and
+              delivery.
+            </p>
+            <ul>
+              <li>KPI architecture and reporting</li>
+              <li>Decision frameworks and governance routines</li>
+              <li>Audit readiness and management visibility</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-item">
+          <div class="service-image">
+            <img src="files/images/service5.jpg" alt="Service 5 Representative Image" />
+          </div>
+          <h3 class="service-title">
+            Continuous Improvement and Periodic IT Health Checks
+          </h3>
+          <div class="service-desc">
+            <p>
+              Ongoing IT health checks and continuous improvement governance
+              to keep operations stable, measurable, and constantly improving.
+            </p>
+            <ul>
+              <li>Periodic health checks and gap closure</li>
+              <li>Continuous improvement backlog and follow-up</li>
+              <li>Governance cadence and tracking</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-item">
+          <div class="service-image">
+            <img src="files/images/service6.jpg" alt="Service 6 Representative Image" />
+          </div>
+          <h3 class="service-title">
+            AI-Enabled Optimization and Automation Advisory
+          </h3>
+          <div class="service-desc">
+            <p>
+              Controlled adoption of automation and AI with governance and
+              value tracking—focused on measurable outcomes, not
+              experimentation without control.
+            </p>
+            <ul>
+              <li>AI-enabled optimization opportunities</li>
+              <li>Automation advisory (controlled rollout)</li>
+              <li>Value tracking and change enablement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Approach -->
+  <section class="approach-section" id="approach-section">
+    <div class="container">
+      <h2 class="approach-title">Our Approach</h2>
+      <p class="approach-text">
+        We work as an executive partner to help organizations adopt technology
+        and AI with governance, control, and measurable results. <br />
+        <br />
+        We start by clarifying ownership, decision rights, and success
+        metrics—then design an operating model and governance cadence that
+        makes progress visible and manageable.​ We translate priorities into a
+        practical roadmap and stay involved through execution: reviewing KPIs,
+        closing gaps, building a continuous improvement backlog, and ensuring
+        adoption is controlled—not ad-hoc. <br />
+        <br />
+        The goal is always the same: sustainable outcomes, not presentations
+        and slideware.
+      </p>
+      <p class="approach-cta-text">
+        For executive conversations on technology strategy, governance,
+        operating models, and AI adoption:
+      </p>
+      <div class="approach-cta">
+        <a href="mailto:yesim.calidag@perius.com.tr" class="cta-button">Let's Talk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us (footer anchor) -->
+  <section id="contact-section"></section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-text">
+        &copy; Perius Technology. All rights reserved.
+      </div>
+      <a href="https://www.linkedin.com/in/yesimcalidag" target="_blank" rel="noopener" class="footer-linkedin"
+        aria-label="LinkedIn">
+        <span class="linkedin-icon" aria-hidden="true">
+          <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="" srcset="" />
+        </span>
+      </a>
+    </div>
+  </footer>
 </body>
+
 </html>

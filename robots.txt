@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /scripts/
+Disallow: /styles/
+Disallow: /files/favicons/
+Allow: /
+
+Sitemap: https://perius.com.tr/sitemap.xml
